@@ -1,11 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Team Project</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket </title>
+
+    <!--link-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <h1>Hello Team</h1>
-  <script src="script.js"></script>
+ <!--navbar-->
+    <div class="navbar">
+        <div class="navbar-s1">
+            <h1 class="navbar-s1-title">Event Ticket</h1>
+        </div>
+        <div class="navbar-s2">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(13, 13, 13);"></i>
+      <input placeholder="search events, concerts, and more...">
+        </div>
+        <div class="navbar-s3">
+            <a href="home.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="booking.html">booking</a>
+            <a href="confirmation.html">Confirmation</a>
+        </div>
+    </div>
+
+   <div class="recommended">
+        <h1 class="recommended__title">Recently Viewed Events</h1>
+        <P>Here a quick look at events you've shown interest in.</P>
+        <div class="recommended__container">
+            <div class="course-card">
+                <img src="./image/investor.png">
+                <h3>Investor Awareness(IA)</h3>
+                <p>Chennai, Tamilnadu, India</p>
+                <p>Apr 25, 2026</p>
+                <p>paid</p>
+                
+            </div>
+
+
+            <div class="course-card">
+                <img src="./image/work.jpg">
+                <h3>Workshop Climb With Confidence</h3>
+                <p>Chennai, Tamilnadu, India</p>
+                <p>Apr 18, 2026</p>
+                <p>paid</p>
+
+
+            </div>
+
+            
+            <div class="course-card">
+                <img src="./image/comedy.jpg">
+                <h3>Comedy & Poetry show</h3>
+                <p>Chennai, Tamilnadu, India</p>
+                <p>Apr 20, 2026</p>
+                <p>paid</p>
+
+
+            </div>
+
+            <div class="course-card">
+                <img src="./image/sweet.jpg">
+                <h3>Tastefully yours-BY Thisram and SKC</h3>
+                <p>Chennai, Tamilnadu, India</p>
+                <p>Apr 26, 2026</p>
+                <p>paid</p>
+
+
+            </div>
+
+            <div class="course-card">
+                <img src="./image/miles.jpg">
+                <h3> Chennai Miles for makers</h3>
+                <p>Chennai, Tamilnadu, India</p>
+                <p>May 01, 2026</p>
+                <p>paid</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular">
+        <h2 class="popular-title">Spotlight</h2>
+        <p class="popular-subtitle">Handpicked experience and standout events you won't want to miss</p>
+        <div class="popular-container">
+            <div class="popular-card">
+                <img src="./image/miles.jpg">
+                <h3>Chennai Miles for makers</h3>
+                <p><img src="./image/location.png">, Tamilnadu, India</p>
+                <p>May 01, 2026</p>
+                <button>Book Now</button>
+            </div>
+            <div class="popular-card">
+                <img src="./image/investor.png">
+                <h3>Chennai Miles for makers</h3>
+                <p><img src="./image/location.png">Chennai, Tamilnadu, India</p>
+                <p>Apr 25, 2026</p>
+                <button>Book Now</button>
+            </div>
+
+             <div class="popular-card">
+                <img src="./image/vimanam.jpg">
+                <h3>ajay nathan- vimaanam tour</h3>
+                <p><img src="./image/location.png">Chennai, Tamilnadu, India</p>
+                <p>Apr 25, 2026</p>
+                <button>Get ticket</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="upcoming">
+        <h2 class="upcoming-title">Upcoming Events</h2>
+        <p class="upcoming-subtitle">Events that are happening soon</p>
+        <div class="upcoming-container">
+            <div class="upcoming-card">
+                <img src="./image/work.jpg">
+                <h3>Workshop Climb With Confidence</h3>
+                <p><img src="./image/location.png">Chennai, Tamilnadu, India</p>
+                <p>Apr 18, 2026</p>
+                
+            </div>
+            <div class="upcoming-card">
+                <img src="./image/athletic.jpg">
+                <h3>Athletic Championship</h3>
+                <p><img src="./image/location.png">Chennai, Tamilnadu, India</p>
+                <p>Apr 23, 2026</p>
+                
+            </div>
+            <div class="upcoming-card">
+                <img src="./image/food.jpg">
+                <h3>Event & Festivals in chennai</h3>
+                <p><img src="./image/location.png">Chennai, Tamilnadu, India</p>
+                <p>Apr 25, 2026</p>
+                
+            </div>
+ <div class="upcoming-card">
+                <img src="./image/kid.jpg">
+                <h3>Kids Walkathon</h3>
+                <p><img src="./image/location.png">Chennai, Tamilnadu, India</p>
+                <p>Apr 30, 2026</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-one">
+            <h2>Event Ticket Platform</h2>
+            <i class="fa-regular fa-location-dot" style="color: rgb(21, 107, 55);"></i>
+            <p>Discover and book unforgettable events. Whether you're into music, adventure, or comedy, we have the perfect event for you.</p>
+            <br>
+            <h3>Get the App</h3>
+            <button><img src="./image/gpay.png"></button>
+            <button><img src="./image/app.png"></button>
+        </div>
+
+        <div class="footer-two">
+            <div class="footer-two-s1">
+                <h4>Company</h4>
+                <p>About us</p>
+                <p>Pricing</p>
+<p>Contact us</p>
+<p>Blog</p>
+<p>Event Magazine</p>
+<p>Sitemap</p>
+
+            </div>
+
+            <div class="footer-two-s2">
+                <h4>Features</h4>
+                <p>Free Events</p>
+                <p>Event Forms</p>
+                <p>Conference Solution</p>
+                <p>Event Calendar</p>
+                <p>Event Marketing</p>
+                <p>Event Reviews</p>
+            </div>
+
+            <div class="footer-two-s3">
+                <h4>Organize an Event</h4>
+                <p>Conferences</p>
+                <p>Workshops</p>
+                <p>Festivals & celebrations</p>
+                <p>Meetups and Reunions</p>
+                <p>Entertainment Events</p>
+            </div>
+
+            <div class="footer-two-s4">
+                <h4>Popular Cities</h4>
+                <p>Chennai</p>
+                <p>coimbatore</p>
+                <p>Hyderabad</p>
+                <p>Mumbai</p>
+                <p>Bengaluru</p>
+                <p>Goa</p>
+            </div>
+
+            <div class="footer-two-s5">
+                <h4>Legal</h4>
+                <p>How it works</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy</p>
+                <p>Cookie Policy</p>
+                <p>Support</p>
+                <p>Brand Assets</p>
+                <p>News Room</p>
+            </div>
+        </div>
+        <div class="footer-three">
+        <h3>Event Ticket</h3>
+        <p>&copy; 2026 Event Ticket . All rights reserved.</p>
+        <h4>Contact Us</h4>
+        <p>Email: info@creativetickethub.com</p>
+        <p>Phone: +1 (800) 123-4567</p>
+        <h4>Follow Us</h4>
+        <i class="fa-brands fa-facebook" style="color: rgb(60, 63, 63);"></i>
+        <i class="fa-brands fa-instagram" style="color: rgb(60, 63, 63);"></i>
+        <i class="fa-brands fa-x-twitter" style="color: rgb(60, 63, 63);"></i>
+        <i class="fa-brands fa-youtube" style="color: rgb(60, 63, 63);"></i>
+        <i class="fa-brands fa-linkedin" style="color: rgb(60, 63, 63);"></i>
+        </div>
+    </div>
+        
 </body>
 </html>
