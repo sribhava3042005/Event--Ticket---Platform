@@ -1,0 +1,615 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0f172a;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+.navbar-s2 input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width:600px;
+}
+.course-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0 4px 10px;
+  cursor: pointer;
+  
+  
+}
+.course-card:hover{
+  transform:  translateY(-10px);
+  scale: (1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.recommended__container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding-top: 30px;
+
+}
+.recommended__title{
+  padding-top: 30px;
+   color: #0d6efd;
+   font-size: 38px;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 10px;
+
+}
+.recommended h3{
+  padding-top: 20px;
+   color:black;
+   font-size: 18px;
+   font-weight: 400;
+   text-align: center;
+   font-family: Arial, sans-serif;
+   margin-bottom: 30px;
+}
+.recommended h4{
+  text-align: center;
+  
+}
+.recommended h5{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.recommended button{
+  
+  background-color:rgb(224, 34, 34);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+
+}
+
+/* Spotlight Section */
+.popular {
+    padding: 50px 60px;
+    background-color: #f9f9f9;
+}
+
+/* Title */
+.popular-title {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.popular-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Grid */
+.popular-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.popular-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+/* Image */
+.popular-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content */
+.popular-card h3 {
+    font-size: 18px;
+    margin: 12px;
+}
+
+.popular-card h2,
+.popular-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 12px 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Location icon */
+.popular-card p img,
+.popular-card h2 img {
+    width: 14px;
+    height: 14px;
+}
+
+/* Button */
+.popular-card button {
+    margin: 10px 12px 0;
+    padding: 10px;
+    width: calc(100% - 24px);
+    border: none;
+    border-radius: 8px;
+    background-color: #1dbf73;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.popular-card button:hover {
+    background-color: #188853;
+}
+
+/* Hover Effect */
+.popular-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .popular {
+        padding: 20px;
+    }
+
+    .popular-card img {
+        height: 150px;
+    }
+}
+/* Upcoming Section */
+.upcoming {
+    padding: 50px 60px;
+    background-color: #fff;
+}
+
+/* Title */
+.upcoming-title {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.upcoming-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.upcoming-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.upcoming-card {
+    background: #fafafa;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+/* Image */
+.upcoming-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+/* Content */
+.upcoming-card h3 {
+    font-size: 17px;
+    margin: 12px;
+}
+.upcoming-card button {
+background-color: #17a865;
+border: none;
+padding: 10px;
+border-radius: 5px;
+color:whitesmoke
+
+}
+
+.upcoming-card h4,
+.upcoming-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 12px 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Location Icon */
+.upcoming-card p img,
+.upcoming-card h4 img {
+    width: 14px;
+    height: 14px;
+}
+
+/* Date Styling */
+.upcoming-card p:last-child {
+    color: #188d56;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.upcoming-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .upcoming {
+        padding: 20px;
+    }
+
+    .upcoming-card img {
+        height: 150px;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Title */
+.popular-cities {
+    padding: 40px 60px;
+}
+
+.popular-cities-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.popular-cities h4 {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* Grid Layout */
+.popular-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Card */
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.image-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.image-name h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.image-name p {
+    font-size: 14px;
+}
+
+/* Hover Effect */
+.image:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 60px;
+    margin-top: 50px;
+}
+
+/* Footer Top */
+.footer-one {
+    margin-bottom: 30px;
+}
+
+.footer-one h2 {
+    margin-bottom: 10px;
+}
+
+.footer-one p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-one button {
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.footer-one img {
+    width: 120px;
+}
+
+/* Footer Grid */
+.footer-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footer-two h4 {
+    margin-bottom: 10px;
+}
+
+.footer-two p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.footer-two p:hover {
+    color: #fff;
+}
+
+/* Footer Bottom */
+.footer-three {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-three h3 {
+    margin-bottom: 10px;
+}
+
+.footer-three p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+.footer-three i {
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-three i:hover {
+    color: #1dbf73;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .popular-cities {
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .image img {
+        height: 200px;
+    }
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1dbf73;
+    color: white;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Booking Details */
+#bookingDetails h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#bookingDetails p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#bookingDetails strong {
+    color: #000;
+}
+
+/* Highlight total */
+#confirmTotal {
+    color: #1dbf73;
+    font-weight: bold;
+}
+
+/* Button */
+.button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #1dbf73;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #17a865;
+}
+
+/* Footer (reuse + slight polish) */
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 60px;
+    margin-top: 50px;
+}
+
+.footer-one p {
+    color: #ccc;
+}
+
+.footer-one button {
+    margin-top: 10px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-one img {
+    width: 110px;
+}
+
+/* Footer grid */
+.footer-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footer-two p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.footer-two p:hover {
+    color: #fff;
+}
+
+/* Footer bottom */
+.footer-three {
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-three p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-three i {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-three i:hover {
+    color: #1dbf73;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
