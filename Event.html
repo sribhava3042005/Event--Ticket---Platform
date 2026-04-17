@@ -1,1 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
 
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-s1">
+            <h1 class="navbar-s1-title">Event Ticket</h1>
+        </div>
+        <div class="navbar-s2">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 240, 240);"></i>
+            <input placeholder="Search events, concerts, and more.........">
+        </div>
+        <div class="navbar-s3">
+            <a href="home.html">Home</a>
+            <a href="Event.html">Events</a>
+            <a href="booking.html">Booking</a>
+            <a href="confirmation.html">Confirmation</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <div class="events-hero">
+        <h1>All Events</h1>
+        <p>Browse and discover events happening near you</p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="events-filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="workshop">Workshop</button>
+        <button class="filter-btn" data-filter="comedy">Comedy</button>
+        <button class="filter-btn" data-filter="food">Food & Festivals</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
+        <button class="filter-btn" data-filter="music">Music</button>
+        <button class="filter-btn" data-filter="kids">Kids</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+    </div>
+
+    <!-- Events Grid -->
+    <div class="events-section">
+        <div class="events-grid">
+
+            <!-- Event 1 -->
+            <div class="event-card" data-category="business">
+                <div class="event-card-img">
+                    <img src="./image/investor.png" alt="Investor Awareness">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Business</span>
+                    <h3>Investor Awareness (IA)</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 25, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹499</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card" data-category="workshop">
+                <div class="event-card-img">
+                    <img src="./image/work.jpg" alt="Workshop Climb With Confidence">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Workshop</span>
+                    <h3>Workshop: Climb With Confidence</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 18, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹299</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card" data-category="comedy">
+                <div class="event-card-img">
+                    <img src="./image/comedy.jpg" alt="Comedy & Poetry Show">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Comedy</span>
+                    <h3>Comedy & Poetry Show</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 20, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹399</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-card" data-category="food">
+                <div class="event-card-img">
+                    <img src="./image/sweet.jpg" alt="Tastefully Yours">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Food</span>
+                    <h3>Tastefully Yours - By Thisram & SKC</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 26, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹599</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="event-card" data-category="sports">
+                <div class="event-card-img">
+                    <img src="./image/miles.jpg" alt="Chennai Miles for Makers">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Sports</span>
+                    <h3>Chennai Miles for Makers</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 01, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹199</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="event-card" data-category="music">
+                <div class="event-card-img">
+                    <img src="./image/vimanam.jpg" alt="Ajay Nathan Vimaanam Tour">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Music</span>
+                    <h3>Ajay Nathan - Vimaanam Tour</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 25, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹799</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 7 -->
+            <div class="event-card" data-category="sports">
+                <div class="event-card-img">
+                    <img src="./image/athletic.jpg" alt="Athletic Championship">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Sports</span>
+                    <h3>Athletic Championship</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 23, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹149</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 8 -->
+            <div class="event-card" data-category="food">
+                <div class="event-card-img">
+                    <img src="./image/food.jpg" alt="Events & Festivals in Chennai">
+                    <span class="event-badge free">Free</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Food & Festivals</span>
+                    <h3>Events & Festivals in Chennai</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 25, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price free-price">Free</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 9 -->
+            <div class="event-card" data-category="kids">
+                <div class="event-card-img">
+                    <img src="./image/kid.jpg" alt="Kids Walkathon">
+                    <span class="event-badge free">Free</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Kids</span>
+                    <h3>Kids Walkathon</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> Apr 30, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price free-price">Free</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 10 — replace src with your image -->
+            <div class="event-card" data-category="music">
+                <div class="event-card-img">
+                    <img src="./image/event10.jpg" alt="Open Mic Night">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Music</span>
+                    <h3>Open Mic Night - Chennai Edition</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 03, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹249</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 11 — replace src with your image -->
+            <div class="event-card" data-category="workshop">
+                <div class="event-card-img">
+                    <img src="./image/event11.jpg" alt="Photography Workshop">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Workshop</span>
+                    <h3>Photography Basics Workshop</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 05, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹499</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 12 — replace src with your image -->
+            <div class="event-card" data-category="comedy">
+                <div class="event-card-img">
+                    <img src="./image/event12.png" alt="Stand Up Comedy">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Comedy</span>
+                    <h3>Stand Up Comedy Night</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Mumbai, Maharashtra, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 07, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹349</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 13 — replace src with your image -->
+            <div class="event-card" data-category="business">
+                <div class="event-card-img">
+                    <img src="./image/event13..jpg" alt="Startup Summit">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Business</span>
+                    <h3>Startup Summit 2026</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 10, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹999</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 14 — replace src with your image -->
+            <div class="event-card" data-category="food">
+                <div class="event-card-img">
+                    <img src="./image/event14.jpg" alt="Street Food Carnival">
+                    <span class="event-badge free">Free</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Food & Festivals</span>
+                    <h3>Street Food Carnival</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 11, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price free-price">Free</span>
+                        <a href="booking.html"><button class="event-book-btn">Register</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 15 — replace src with your image -->
+            <div class="event-card" data-category="sports">
+                <div class="event-card-img">
+                    <img src="./image/event15.jpg" alt="Cycling Marathon">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Sports</span>
+                    <h3>Cycling Marathon - Goa</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Goa, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 14, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹299</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 16 — replace src with your image -->
+            <div class="event-card" data-category="kids">
+                <div class="event-card-img">
+                    <img src="./image/event16.jpg" alt="Kids Art Workshop">
+                    <span class="event-badge free">Free</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Kids</span>
+                    <h3>Kids Art & Craft Workshop</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 17, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price free-price">Free</span>
+                        <a href="booking.html"><button class="event-book-btn">Register</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 17 — replace src with your image -->
+            <div class="event-card" data-category="music">
+                <div class="event-card-img">
+                    <img src="./image/event17.jpg" alt="Classical Music Evening">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Music</span>
+                    <h3>Classical Music Evening</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 20, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹599</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 18 — replace src with your image -->
+            <div class="event-card" data-category="workshop">
+                <div class="event-card-img">
+                    <img src="./image/event18.jpg" alt="Cooking Masterclass">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Workshop</span>
+                    <h3>Cooking Masterclass with Chef Ravi</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Mumbai, Maharashtra, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 22, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹799</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 19 — replace src with your image -->
+            <div class="event-card" data-category="business">
+                <div class="event-card-img">
+                    <img src="./image/event19.jpg" alt="Digital Marketing Bootcamp">
+                    <span class="event-badge paid">Paid</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Business</span>
+                    <h3>Digital Marketing Bootcamp</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 25, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price">₹1299</span>
+                        <a href="booking.html"><button class="event-book-btn">Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 20 — replace src with your image -->
+            <div class="event-card" data-category="comedy">
+                <div class="event-card-img">
+                    <img src="./image/event20.jpg" alt="Improv Comedy Show">
+                    <span class="event-badge free">Free</span>
+                </div>
+                <div class="event-card-body">
+                    <span class="event-category-tag">Comedy</span>
+                    <h3>Improv Comedy Show</h3>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Kochi, Kerala, India</p>
+                    <p class="event-date"><i class="fa-regular fa-calendar"></i> May 28, 2026</p>
+                    <div class="event-card-footer">
+                        <span class="event-price free-price">Free</span>
+                        <a href="booking.html"><button class="event-book-btn">Register</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-one">
+            <h2>Event Ticket Platform</h2>
+            <p>Discover and book unforgettable events. Whether you're into music, adventure, or comedy, we have the perfect event for you.</p>
+            <br>
+            <h3>Get the App</h3>
+            <button><img src="./image/gpay.png"></button>
+            <button><img src="./image/app.png"></button>
+        </div>
+        <div class="footer-two">
+            <div class="footer-two-s1">
+                <h4>Company</h4>
+                <p>About us</p>
+                <p>Pricing</p>
+                <p>Contact us</p>
+                <p>Blog</p>
+                <p>Event Magazine</p>
+                <p>Sitemap</p>
+            </div>
+            <div class="footer-two-s2">
+                <h4>Features</h4>
+                <p>Free Events</p>
+                <p>Event Forms</p>
+                <p>Conference Solution</p>
+                <p>Event Calendar</p>
+                <p>Event Marketing</p>
+                <p>Event Reviews</p>
+            </div>
+            <div class="footer-two-s3">
+                <h4>Organize an Event</h4>
+                <p>Conferences</p>
+                <p>Workshops</p>
+                <p>Festivals & celebrations</p>
+                <p>Meetups and Reunions</p>
+                <p>Entertainment Events</p>
+            </div>
+            <div class="footer-two-s4">
+                <h4>Popular Cities</h4>
+                <p>Chennai</p>
+                <p>Coimbatore</p>
+                <p>Hyderabad</p>
+                <p>Mumbai</p>
+                <p>Bengaluru</p>
+                <p>Goa</p>
+            </div>
+            <div class="footer-two-s5">
+                <h4>Legal</h4>
+                <p>How it works</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy</p>
+                <p>Cookie Policy</p>
+                <p>Support</p>
+                <p>Brand Assets</p>
+            </div>
+        </div>
+        <div class="footer-three">
+            <h3>Event Ticket</h3>
+            <p>&copy; 2026 Event Ticket. All rights reserved.</p>
+            <h4>Contact Us</h4>
+            <p>Email: info@creativetickethub.com</p>
+            <p>Phone: +1 (800) 123-4567</p>
+            <h4>Follow Us</h4>
+            <i class="fa-brands fa-facebook" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-instagram" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-x-twitter" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-youtube" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-linkedin" style="color: rgb(60, 63, 63);"></i>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

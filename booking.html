@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-s1">
+            <h1 class="navbar-s1-title">Event Ticket</h1>
+        </div>
+        <div class="navbar-s2">
+            <i class="fa-solid fa-magnifying-glass" style="color: rgb(245, 240, 240);"></i>
+            <input placeholder="Search events, concerts, and more.........">
+        </div>
+        <div class="navbar-s3">
+            <a href="home.html">Home</a>
+            <a href="Event.html">Events</a>
+            <a href="booking.html">Booking</a>
+            <a href="confirmation.html">Confirmation</a>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <div class="booking-wrapper">
+
+        <!-- Left: Event Summary -->
+        <div class="booking-summary">
+            <img src="./image/work.jpg" alt="Event Image">
+            <h2>Workshop: Climb With Confidence</h2>
+            <p><i class="fa-solid fa-location-dot"></i> Chennai, Tamilnadu, India</p>
+            <p><i class="fa-regular fa-calendar"></i> Apr 18, 2026</p>
+            <p><i class="fa-regular fa-clock"></i> 10:00 AM - 4:00 PM</p>
+            <hr>
+            <div class="booking-price-row">
+                <span>Price per ticket</span>
+                <span>₹299</span>
+            </div>
+            <div class="booking-price-row">
+                <span>Convenience fee</span>
+                <span>₹20</span>
+            </div>
+            <hr>
+            <div class="booking-price-row total">
+                <span>Total</span>
+                <span>₹319</span>
+            </div>
+        </div>
+
+        <!-- Right: Booking Form -->
+        <div class="booking-form-box">
+            <h2>Your Details</h2>
+            <p class="booking-form-sub">Fill in your info to complete the booking</p>
+
+            <form action="confirmation.html">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+91 00000 00000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tickets">Number of Tickets</label>
+                    <select id="tickets">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ticket-type">Ticket Type</label>
+                    <select id="ticket-type">
+                        <option value="general">General</option>
+                        <option value="vip">VIP</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="booking-submit-btn">Proceed to Confirm</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-one">
+            <h2>Event Ticket Platform</h2>
+            <p>Discover and book unforgettable events. Whether you're into music, adventure, or comedy, we have the perfect event for you.</p>
+            <br>
+            <h3>Get the App</h3>
+            <button><img src="./image/gpay.png"></button>
+            <button><img src="./image/app.png"></button>
+        </div>
+        <div class="footer-two">
+            <div class="footer-two-s1">
+                <h4>Company</h4>
+                <p>About us</p>
+                <p>Pricing</p>
+                <p>Contact us</p>
+                <p>Blog</p>
+                <p>Event Magazine</p>
+                <p>Sitemap</p>
+            </div>
+            <div class="footer-two-s2">
+                <h4>Features</h4>
+                <p>Free Events</p>
+                <p>Event Forms</p>
+                <p>Conference Solution</p>
+                <p>Event Calendar</p>
+                <p>Event Marketing</p>
+                <p>Event Reviews</p>
+            </div>
+            <div class="footer-two-s3">
+                <h4>Organize an Event</h4>
+                <p>Conferences</p>
+                <p>Workshops</p>
+                <p>Festivals & celebrations</p>
+                <p>Meetups and Reunions</p>
+                <p>Entertainment Events</p>
+            </div>
+            <div class="footer-two-s4">
+                <h4>Popular Cities</h4>
+                <p>Chennai</p>
+                <p>Coimbatore</p>
+                <p>Hyderabad</p>
+                <p>Mumbai</p>
+                <p>Bengaluru</p>
+                <p>Goa</p>
+            </div>
+            <div class="footer-two-s5">
+                <h4>Legal</h4>
+                <p>How it works</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy</p>
+                <p>Cookie Policy</p>
+                <p>Support</p>
+                <p>Brand Assets</p>
+            </div>
+        </div>
+        <div class="footer-three">
+            <h3>Event Ticket</h3>
+            <p>&copy; 2026 Event Ticket. All rights reserved.</p>
+            <h4>Contact Us</h4>
+            <p>Email: info@creativetickethub.com</p>
+            <p>Phone: +1 (800) 123-4567</p>
+            <h4>Follow Us</h4>
+            <i class="fa-brands fa-facebook" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-instagram" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-x-twitter" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-youtube" style="color: rgb(60, 63, 63);"></i>
+            <i class="fa-brands fa-linkedin" style="color: rgb(60, 63, 63);"></i>
+        </div>
+    </div>
+
+</body>
+</html>
