@@ -181,7 +181,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 });
+function togglemenu(){
+    document.getElementById("navlinks").classList.classList.toggle("active");
 
+}
 
 
 

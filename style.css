@@ -6,7 +6,34 @@
   background-color: #0f172a;
   color: white;
 }
+/* hide menu icon in desktop */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
+/* Mobile view */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-s3 {
+    display: none; /* hide links initially */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-s3 a {
+    padding: 10px 0;
+    display: block;
+  }
+
+  .navbar-s3.active {
+    display: flex; /* show when clicked */
+  }
+}
 .navbar a {
   color: white;
   text-decoration: none;
